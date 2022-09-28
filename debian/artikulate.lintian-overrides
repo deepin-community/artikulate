@@ -1,0 +1,4 @@
+# private libraries
+artikulate: package-name-doesnt-match-sonames
+# private library
+artikulate: no-symbols-control-file

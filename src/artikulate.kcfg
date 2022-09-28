@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+SPDX-FileCopyrightText: 2016 Andreas Cord-Landwehr <cordlandwehr@kde.org>
+SPDX-License-Identifier: LGPL-2.1-or-later
+-->
+<kcfg xmlns="http://www.kde.org/standards/kcfg/1.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.kde.org/standards/kcfg/1.0
+                          http://www.kde.org/standards/kcfg/1.0/kcfg.xsd" >
+  <kcfgfile name="artikulaterc"/>
+  <group name="artikulate">
+    <entry name="ShowMenuBar" type="Bool">
+      <label>If true, the main menu bar is shown.</label>
+      <default>false</default>
+    </entry>
+    <entry name="UseCourseRepository" type="Bool">
+      <label>If enabled, course files are only read from the local contributor repository</label>
+      <default>false</default>
+    </entry>
+    <entry name="CourseRepositoryPath" type="String">
+      <label>Path to local contributor repository</label>
+    </entry>
+    <entry name="AudioInputDevice" type="String">
+      <label>Name of audio input device</label>
+    </entry>
+    <entry name="AudioInputVolume" type="Int">
+      <label>Audio input volume</label>
+      <default>10</default>
+    </entry>
+    <entry name="AudioOutputVolume" type="Int">
+      <label>Audio output volume</label>
+      <default>10</default>
+    </entry>
+    <entry name="TrainingPhraseFont" type="Font">
+      <label>Font</label>
+      <code>QFont defaultFont = QFont();
+            defaultFont.setPointSize(20);
+      </code>
+      <default code="true">defaultFont</default>
+    </entry>
+    <entry name="RecordingBackend" type="String">
+      <label>Set either to 'qtmultimediabackend' or 'qtgstreamerbackend', selected on runtime if available.</label>
+      <default>qtmultimediabackend</default>
+    </entry>
+  </group>
+</kcfg>

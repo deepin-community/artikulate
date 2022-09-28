@@ -1,0 +1,475 @@
+artikulate (4:21.08.0-1) unstable; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.08.0).
+
+ -- Norbert Preining <norbert@preining.info>  Mon, 16 Aug 2021 15:42:27 +0900
+
+artikulate (4:21.04.2-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.2).
+
+ -- Norbert Preining <norbert@preining.info>  Thu, 10 Jun 2021 19:20:38 +0900
+
+artikulate (4:21.04.0-1) experimental; urgency=medium
+
+  [ Norbert Preining ]
+  * New upstream release (21.04.0).
+  * Borrow minimal upstream signing key from k3b.
+  * Drop Kubuntu from maintainer name.
+  * Added myself to the uploaders.
+
+ -- Norbert Preining <norbert@preining.info>  Wed, 28 Apr 2021 09:28:10 +0900
+
+artikulate (4:20.12.1-2) unstable; urgency=medium
+
+  * Team upload.
+  * Add the configuration for the CI on salsa.
+  * Remove the explicit as-needed linking, as it is done by binutils now.
+  * Unregister the old /etc/xdg/artikulate.knsrc conffile. (Closes: #980027)
+  * Explicitly add the gettext build dependency.
+  * Update lintian overrides.
+  * Remove the manual HOME/TMPDIR/XDG_RUNTIME_DIR handling in dh_auto_test,
+    as debhelper does it automatically in compat 13+.
+  * Remove the manual check for nocheck in DEB_BUILD_OPTIONS, as debhelper does
+    it already in compat 13+.
+
+ -- Pino Toscano <pino@debian.org>  Wed, 13 Jan 2021 09:26:10 +0100
+
+artikulate (4:20.12.1-1) unstable; urgency=medium
+
+  * Refresh copyright information.
+  * New upstream release (20.12.1).
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Thu, 07 Jan 2021 23:45:48 +0100
+
+artikulate (4:20.12.0-1) unstable; urgency=medium
+
+  [ Aurélien COUDERC ]
+  * Refresh upstream metadata.
+  * New upstream release (20.12.0).
+  * Add missing QML runtime dependencies.
+  * Refresh copyright information.
+  * Bump Standards-Version to 4.5.1, no change required.
+  * Update project homepage.
+  * Removed Maximiliano Curia from the uploaders, thanks for your work
+    on the package!
+  * Added myself to the uploaders.
+  * Drop patch to install private libs in a libs subfolder, should be done
+    upstream if anywhere.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Thu, 07 Jan 2021 00:08:16 +0100
+
+artikulate (4:20.08.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release (20.08.2).
+  * Refresh copyright information.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Mon, 26 Oct 2020 12:06:11 +0100
+
+artikulate (4:20.04.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release (20.04.2).
+  * Update build dependencies according to upstream build system:
+    - kf5 >= 5.64.0
+  * Review copyright information with the help of SPDX license headers now
+    provided by upstream.
+  * Mark test build dependencies with the <!nocheck> profile.
+  * Bump dh compatibility level to 13.
+  * Add Bug-* URLs to upstream metadata.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sun, 14 Jun 2020 00:59:38 +0200
+
+artikulate (4:19.12.2-1) unstable; urgency=medium
+
+  * Team upload.
+  * Drop patch fix-download-page-background, merged upstream.
+  * New upstream minor release (19.12.2).
+  * Bump Standards-Versions to 4.5.0 (no change needed).
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Sat, 08 Feb 2020 16:10:54 +0100
+
+artikulate (4:19.12.1-1) unstable; urgency=medium
+
+  * Team upload.
+
+  [ Aurélien COUDERC ]
+  * Update debian/watch to point to new KDE release service URL.
+  * New upstream release (19.12.1).
+  * Update build dependencies according to upstream build system:
+    - cmake >= 3.5.0
+    - kf5 >= 5.57.0
+    - drop libkf5xmlgui-dev, add kirigami2-dev
+  * Add runtime dependencies to libqt5multimedia5-plugins,
+    qml-module-qtquick-shapes, qml-module-org-kde-kirigami2,
+    qml-module-org-kde-newstuff, qml-module-qtquick-controls to ensure it
+    also works on non-KDE desktops.
+  * Review of debian/copyright.
+  * Update upstream project homepage URL.
+  * Switch Vcs-* fields to salsa.debian.org.
+  * Replace debian/compat with debhelper-compat build dependency, bump
+    compatibility level to 12.
+  * Borrow minimal upstream signing key from k3b.
+  * Bump Standards-Versions to 4.4.1:
+    - Add Rules-Requires-Root: no to debian/control.
+  * Drop l10n migration rules not needed anymore after 2 stable releases.
+  * Drop dbgsym migration rules not needed anymore after 2 stable releases.
+  * Switch from dhmk to dh --with kf5.
+  * Reactivate build-time tests, xvfb-run required GUI related tests.
+  * Drop the 'testsuite' autopkgtest, as it does not test the installed
+    package.
+  * Add hardening=+all build hardening flags.
+  * Add patch to install private libraries into a private lib subfolder.
+  * Add patch to fix download page when using a dark theme.
+
+ -- Aurélien COUDERC <coucouf@debian.org>  Tue, 21 Jan 2020 23:37:24 +0100
+
+artikulate (4:17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
+  * New upstream release.
+  * Adjust l10npkgs_firstversion_ok to the version where kde-l10n will drop
+    translations.
+  * Simplify watch file, and switch it to https.
+  * Bump Standards-Version to 4.1.1, no changes required.
+  * Drop the manual kde-l10n-ast, and kde-l10n-eo breaks/replaces, as they are
+    included in ${kde-l10n:all} already
+
+ -- Pino Toscano <pino@debian.org>  Sun, 26 Nov 2017 08:22:51 +0100
+
+artikulate (4:17.08.0-1) experimental; urgency=medium
+
+  * New upstream release (17.08.0)
+  * testsuite: use a trap for cleanup
+  * Bump Standards-Version to 4.0.1.
+  * Update upstream metadata
+  * Bump kde-l10n breaks/replaces versions
+  * Release to experimental
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 18 Sep 2017 15:06:12 +0200
+
+artikulate (4:17.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 17 Aug 2017 09:29:44 +0000
+
+artikulate (4:17.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 12 Jul 2017 10:17:09 +0000
+
+artikulate (4:17.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 07 Jun 2017 12:19:28 +0000
+
+artikulate (4:17.04.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 11 May 2017 18:07:13 +0000
+
+artikulate (4:17.04.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 19 Apr 2017 13:01:58 +0000
+
+artikulate (4:16.12.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Mar 2017 13:45:39 +0000
+
+artikulate (4:16.12.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 08 Feb 2017 16:54:42 +0000
+
+artikulate (4:16.12.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 11 Jan 2017 13:13:44 +0000
+
+artikulate (4:16.12.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 14 Dec 2016 16:21:51 +0000
+
+artikulate (4:16.08.3-1) unstable; urgency=medium
+
+  * Replace dbus-launch with dbus-run-session in tests.
+    Thanks to Simon McVittie (Closes: 835832)
+  * New upstream release (16.08.3)
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 23 Nov 2016 20:48:51 +0100
+
+artikulate (4:16.08.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Mon, 21 Nov 2016 13:51:47 +0000
+
+artikulate (4:16.08.2-1) unstable; urgency=medium
+
+  * Add qtmultimedia5-dev build dependency
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 17 Oct 2016 21:30:47 +0200
+
+artikulate (4:16.08.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 14 Oct 2016 13:38:13 +0000
+
+artikulate (4:16.08.1-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Fri, 16 Sep 2016 13:04:54 +0000
+
+artikulate (4:16.08.0-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Wed, 24 Aug 2016 13:21:11 +0000
+
+artikulate (4:16.04.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * Stop forcing the local installation to debian/tmp, letting the package
+    directory as install place:
+    - manually remove the files (only development .so symbols) that are not
+      wanted in the binary
+    - remove artikulate.install, no more used now
+    - remove not-installed file, no more useful now
+  * Update lintian overrides.
+  * Raise priority from extra to optional, just like the rest of KDE
+    applications.
+
+ -- Pino Toscano <pino@debian.org>  Tue, 16 Aug 2016 06:38:45 +0200
+
+artikulate (4:16.04.3-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Tue, 12 Jul 2016 11:39:43 +0000
+
+artikulate (4:16.04.2-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 22 Jun 2016 20:54:31 +0200
+
+artikulate (4:16.04.2-0neon) xenial; urgency=medium
+
+  * New release
+
+ -- Neon CI <neon@kde.org>  Thu, 16 Jun 2016 11:09:17 +0000
+
+artikulate (4:16.04.1-3) unstable; urgency=medium
+
+  * Document that depends on qml-module-org-kde-kquickcontrolsaddons was added
+    in the previous upload as well (Closes: #815029)
+  * Add depends on kio so downloading works on non-plasma based systems
+    (Closes: #815030)
+
+ -- Scott Kitterman <scott@kitterman.com>  Sun, 29 May 2016 03:17:12 -0400
+
+artikulate (4:16.04.1-2) unstable; urgency=medium
+
+  * Add missing runtime dependency (qml-module-qtqml-models2)
+    Thanks to Andreas Cord-Landwehr for the fix
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 27 May 2016 18:14:17 +0200
+
+artikulate (4:16.04.1-1) unstable; urgency=medium
+
+  [ Automatic packaging ]
+  * Bump Standards-Version to 3.9.8
+  * Update build-deps and deps with the info from cmake
+
+  [ Maximiliano Curia ]
+  * New upstream release (15.12.2).
+  * Replace the "Historical name" ddeb-migration by its "Modern, clearer" replacement dbgsym-migration.
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+  * Drop testsuite dependency on experimental package libqt5xcbqpa5
+  * Update install files
+  * Add missing test dependency on the qt5 sqlite driver
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 26 May 2016 00:34:10 +0200
+
+artikulate (4:15.12.1-1) experimental; urgency=medium
+
+  * New upstream release (15.12.0).
+  * New upstream release (15.12.1).
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Feb 2016 10:22:23 +0100
+
+artikulate (4:15.08.3-1) experimental; urgency=medium
+
+  * New upstream release (15.08.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 02 Dec 2015 12:38:42 +0100
+
+artikulate (4:15.08.0-1) experimental; urgency=medium
+
+  * New upstream release (15.04.0).
+  * New upstream release (15.04.1).
+  * New upstream release (15.04.2).
+
+  [ Pino Toscano ]
+  * Remove unused libqtmultimediakit1 and qtmobility-dev build dependencies.
+
+  [ Maximiliano Curia ]
+  * New upstream release (15.08.0).
+
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 19 Sep 2015 19:13:46 +0200
+
+artikulate (4:14.12.3-1) experimental; urgency=medium
+
+  * New upstream release (14.12.3).
+
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 29 Mar 2015 15:13:19 +0200
+
+artikulate (4:14.12.2-1) experimental; urgency=medium
+
+  [ Scarlett Clark ]
+  * Add back in kdelibs5 parent version depend.
+  * kdelibs is actually in the 4.14 series. Adjust version.
+
+  [ Maximiliano Curia ]
+  * Prepare initial Debian release.
+  * Bump Standards-Version to 3.9.6, no changes needed.
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 24 Feb 2015 15:03:35 +0100
+
+artikulate (4:14.12.2-0ubuntu1) vivid; urgency=medium
+
+  [ Scarlett Clark ]
+  * New upstream release
+
+  [ José Manuel Santamaría Lema ]
+  * Bump build depend on libqtgstreamer-dev to 1.2.0
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 10 Feb 2015 08:53:09 -0800
+
+artikulate (4:14.12.0-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+  * Remove kdelibs5-dev depend version as there was not a new release.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Mon, 15 Dec 2014 16:20:52 +0100
+
+artikulate (4:14.11.97-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release candidate
+    - build-depend on extra-cmake-modules
+    - add new files to artikulate.install, docs and not-installed
+    - update artikulate.lintian-overrides for an added file
+  * Import Packaging into Debian Git
+  * PPA build
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Fri, 28 Nov 2014 19:53:37 +0100
+
+artikulate (4:4.14.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+  * New upstream release
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 10 Oct 2014 02:29:46 -0700
+
+artikulate (4:4.14.0-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 20 Aug 2014 12:25:22 +0200
+
+artikulate (4:4.13.97-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release RC
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Fri, 01 Aug 2014 16:01:55 +0200
+
+artikulate (4:4.13.95-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Wed, 30 Jul 2014 17:19:14 +0200
+
+artikulate (4:4.13.90-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release
+  * Add libqtgstreamer-dev as a build depend
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Thu, 17 Jul 2014 10:23:53 -0700
+
+artikulate (4:4.13.2-0ubuntu1) utopic; urgency=medium
+
+  * new upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 18 Jun 2014 11:37:50 +0100
+
+artikulate (4:4.13.0-0ubuntu1) trusty; urgency=medium
+
+  * New upstream KDE Software Compilation release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 10 Apr 2014 21:32:21 +0100
+
+artikulate (4:4.12.97-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Wed, 02 Apr 2014 11:03:53 +0200
+
+artikulate (4:4.12.95-0ubuntu1) trusty; urgency=medium
+
+  [ Rohan Garg ]
+  * New upstream beta release
+
+  [ Philip Muškovac ]
+  * Drop upstream_add-library-versions.diff, applied upstream
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sun, 23 Mar 2014 11:51:01 +0100
+
+artikulate (4:4.12.90-0ubuntu1) trusty; urgency=medium
+
+  [ Jonathan Riddell ]
+  * New upstream beta release
+
+  [ Philip Muškovac ]
+  * Use dhmk
+  * Move the libraries from artikulate-dev to artikulate as the libs are not
+    just dev symlinks and drop artikulate-dev as it's now empty
+  * Add da9a92aca3a7af07feb8bde506129fb9314f9e60 as
+    upstream_add-library-versions.diff so the libraries are properly versioned
+  * Override package-name-doesnt-match-sonames for artikulate as the libs are
+    private
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 19 Mar 2014 10:29:51 +0000
+
+artikulate (0.2.0-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release
+    - Update install files
+    - Update symbols
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 12 Mar 2014 11:37:03 +0100
+
+artikulate (0.1.0-0ubuntu1) trusty; urgency=low
+
+  * Initial release. (LP: #1208021)
+
+ -- Howard Chan <smartboyhw@gmail.com>  Sat, 03 Aug 2013 23:47:00 +0800

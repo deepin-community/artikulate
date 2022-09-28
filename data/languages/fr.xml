@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<!--
+  SPDX-FileCopyrightText: 2016 Andreas Cord-Landwehr <cordlandwehr@kde.org>
+  SPDX-License-Identifier: LGPL-2.1-or-later
+-->
+<language>
+    <id>fr</id>
+    <title>Français</title>
+    <i18nTitle>French</i18nTitle>
+    <phonemeGroups>
+        <phonemeGroup>
+            <id>nasales</id>
+            <title>Nasales</title>
+            <description>Nasales</description>
+            <phonemes>
+                <phoneme>
+                    <id>awn</id>
+                    <title>[ã] croissant</title>
+                </phoneme>
+                <phoneme>
+                    <id>ahn</id>
+                    <title>[ɛ̃] pain</title>
+                </phoneme>
+                <phoneme>
+                    <id>uhn</id>
+                    <title>[œ̃] brun</title>
+                </phoneme>
+                <phoneme>
+                    <id>ohn</id>
+                    <title>[ɔ̃] son</title>
+                </phoneme>
+            </phonemes>
+        </phonemeGroup>
+        <phonemeGroup>
+            <id>voyelles</id>
+            <title>Voyelles</title>
+            <description>Voyelles</description>
+            <phonemes>
+                <phoneme>
+                    <id>ah</id>
+                    <title>[a] ami</title>
+                </phoneme>
+                <phoneme>
+                    <id>ah-longer</id>
+                    <title>[ɑ] château</title>
+                </phoneme>
+                <phoneme>
+                    <id>ee</id>
+                    <title>[i] vie</title>
+                </phoneme>
+                <phoneme>
+                    <id>ee-rounded</id>
+                    <title>[y] rue</title>
+                </phoneme>
+                <phoneme>
+                    <id>ay</id>
+                    <title>[e] nez</title>
+                </phoneme>
+                <phoneme>
+                    <id>ay-rounded</id>
+                    <title>[ø] jeu</title>
+                </phoneme>
+                <phoneme>
+                    <id>eh</id>
+                    <title>[ɛ] lait</title>
+                </phoneme>
+                <phoneme>
+                    <id>eh-rounded</id>
+                    <title>[œ] fleur</title>
+                </phoneme>
+                <phoneme>
+                    <id>oo</id>
+                    <title>[u] cou</title>
+                </phoneme>
+                <phoneme>
+                    <id>oh</id>
+                    <title>[o] eau</title>
+                </phoneme>
+                <phoneme>
+                    <id>aw</id>
+                    <title>[ɔ] sol</title>
+                </phoneme>
+                <phoneme>
+                    <id>uh</id>
+                    <title>[ə] genou</title>
+                </phoneme>
+            </phonemes>
+        </phonemeGroup>
+        <phonemeGroup>
+            <id>consonnes</id>
+            <title>Consonnes</title>
+            <description>Consonnes</description>
+            <phonemes>
+                <phoneme>
+                    <id>jour</id>
+                    <title>[ʒ] jour</title>
+                </phoneme>
+                <phoneme>
+                    <id>gu</id>
+                    <title>[g] goût</title>
+                </phoneme>
+                <phoneme>
+                    <id>aɲo</id>
+                    <title>[ɲ] agneau</title>
+                </phoneme>
+                <phoneme>
+                    <id>su</id>
+                    <title>[s] sous</title>
+                </phoneme>
+                <phoneme>
+                    <id>zo</id>
+                    <title>[z] zoo</title>
+                </phoneme>
+                <phoneme>
+                    <id>ʃu</id>
+                    <title>[ʃ] chou</title>
+                </phoneme>
+                <phoneme>
+                    <id>vu</id>
+                    <title>[v] vous</title>
+                </phoneme>
+                <phoneme>
+                    <id>fu</id>
+                    <title>[f] fou</title>
+                </phoneme>
+                <phoneme>
+                    <id>ʁu</id>
+                    <title>[ʁ] roue</title>
+                </phoneme>
+                <phoneme>
+                    <id>lu</id>
+                    <title>[l] loup</title>
+                </phoneme>
+                <phoneme>
+                    <id>ku</id>
+                    <title>[k] cou</title>
+                </phoneme>
+                <phoneme>
+                    <id>pu</id>
+                    <title>[p] pou</title>
+                </phoneme>
+                <phoneme>
+                    <id>bu</id>
+                    <title>[b] boue</title>
+                </phoneme>
+                <phoneme>
+                    <id>du</id>
+                    <title>[d] doux</title>
+                </phoneme>
+                <phoneme>
+                    <id>tu</id>
+                    <title>[t] tout</title>
+                </phoneme>
+                <phoneme>
+                    <id>paʁkiŋ</id>
+                    <title>[ŋ] parking</title>
+                </phoneme>
+                <phoneme>
+                    <id>mu</id>
+                    <title>[m] mou</title>
+                </phoneme>
+                <phoneme>
+                    <id>nu</id>
+                    <title>[n] nous</title>
+                </phoneme>
+            </phonemes>
+        </phonemeGroup>
+    </phonemeGroups>
+</language>

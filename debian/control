@@ -1,0 +1,57 @@
+Source: artikulate
+Section: education
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Aurélien COUDERC <coucouf@debian.org>,
+           Norbert Preining <norbert@preining.info>,
+Build-Depends: cmake (>= 3.5.0~),
+               debhelper-compat (= 13),
+               extra-cmake-modules (>= 5.64.0~),
+               gettext,
+               kirigami2-dev (>= 5.64.0~),
+               libkf5archive-dev (>= 5.64.0~),
+               libkf5config-dev (>= 5.64.0~),
+               libkf5configwidgets-dev (>= 5.64.0~),
+               libkf5crash-dev (>= 5.64.0~),
+               libkf5declarative-dev (>= 5.64.0~),
+               libkf5doctools-dev (>= 5.64.0~),
+               libkf5i18n-dev (>= 5.64.0~),
+               libkf5newstuff-dev (>= 5.64.0~),
+               libkf5widgetsaddons-dev (>= 5.64.0~),
+               libqt5gstreamer-dev (>= 1.2.0),
+               libqt5sql5-sqlite (>= 5.11.0~) <!nocheck>,
+               libqt5xmlpatterns5-dev (>= 5.11.0~),
+               pkg-kde-tools,
+               qtbase5-dev (>= 5.11.0~),
+               qtdeclarative5-dev (>= 5.11.0~),
+               qtmultimedia5-dev (>= 5.11.0~),
+               xauth <!nocheck>,
+               xvfb <!nocheck>,
+Standards-Version: 4.5.1
+Homepage: https://edu.kde.org/artikulate
+Vcs-Browser: https://salsa.debian.org/qt-kde-team/kde/artikulate
+Vcs-Git: https://salsa.debian.org/qt-kde-team/kde/artikulate.git
+Rules-Requires-Root: no
+
+Package: artikulate
+Architecture: any
+Depends: kio,
+         libqt5multimedia5-plugins,
+         qml-module-org-kde-kirigami2,
+         qml-module-org-kde-kquickcontrolsaddons,
+         qml-module-org-kde-newstuff,
+         qml-module-qtqml-models2,
+         qml-module-qtquick-controls,
+         qml-module-qtquick-controls2,
+         qml-module-qtquick-dialogs,
+         qml-module-qtquick-layouts,
+         qml-module-qtquick-shapes,
+         qml-module-qtquick2,
+         ${misc:Depends},
+         ${shlibs:Depends},
+Description: Language learning application
+ Artikulate is a language learning application that helps improving
+ pronunciation skills for various languages. This is included in the
+ KDE Education project.
+ .
+ This package contains the main application for Artikulate.
